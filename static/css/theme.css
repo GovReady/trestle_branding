@@ -1,0 +1,55 @@
+/* checklist for basic branding - fonts, link colors, buttons, background, logo, footer, nav,  */
+
+/* Set base font family. */
+body { font-family: "Source Sans Pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;}
+
+/* navbar background color / background-image: none = removes gradient / uncomment to alter navbar bg color */
+/* .navbar-inverse {   background-color: #EFEFEF; border-color: #CCCCCC; background-image: none; } */
+
+/* navbar links and fontface */
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a { text-shadow: none; color: #CCCCCC; }
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover { color: #FF6600; }
+.navbar-left li { font-family: 'Source Sans Pro', sans-serif; }
+
+/* links */
+a { color: #b34700; text-decoration: none; }
+a:hover { color: #b34700; text-decoration: underline; }
+a:visited { color: #b34700; text-decoration: underline; }
+a.btn-info { color: #b34700;}
+
+/* buttons need lots of overrides */
+
+/* because buttons can be any color, the text needs to be adjustable as well */
+a.btn { color: #282828;}
+.btn-success { color: #282828; }
+.btn-success:hover { color: #282828; }
+.btn-success:active, .btn-success:active.focus, .btn-success:active:focus { color: #282828; }
+.btn-success:focus, .btn-success.focus { color:#282828; }
+.btn { color: #282828;  text-shadow: none; webkit-box-shadow: none; box-shadow: none;}
+
+/* Button colors are a pair. (a dark and a light), */
+.btn-success, .btn-success.active, .btn-success:active {
+background-image: -webkit-linear-gradient(top,#efefef 0,#dbdbdb 100%);
+background-image: -o-linear-gradient(top,#efefef 0,#dbdbdb 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#efefef),to(#dbdbdb));
+background-image: linear-gradient(to bottom,#efefef 0,#dbdbdb 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefefef', endColorstr='#ffdbdbdb', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+background-repeat: repeat-x;
+background-color: #efefef;
+border-color: #b7b7b7;
+}
+
+.btn-success:hover, .btn-success.active, .btn-success:active { background-position: 0 15px; border-color: #8e8e8e; background-color: #efefef; }
+.btn-success:focus {background-position: 0; border-color: #8e8e8e; }
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover { background-position: 0; border-color: #8e8e8e; }
+
+/* front page - Set fonts to whatever you want */
+h1, h2 .splash { font-family: 'Source Sans Pro', sans-serif; }
+.splash-box { background:rgba(0,84,64,1); padding:20px; color:#fff; font-size:1.6em; font-weight: bold; font-family: "Source Sans Pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;  margin:1em 0 1em 0; border-radius: 25px; }
+
+/* glyphicon color on project page */
+.luna-box div.glyphicon { color: #CCCCCC; }
+
+/* used to size and position logo in top left navbar */
+.navbar-brand img { margin: -1px 20px; width:200px; }
