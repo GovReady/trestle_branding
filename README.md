@@ -1,2 +1,2 @@
-# sample_branding
-Sample Branding Repo
+# trestle_branding
+Trestle Branding Repo
